@@ -44,18 +44,46 @@
           <section>
             <h6>Code examples</h6>
             <code>
-              var collection = { 2548: { albumTitle: 'Slippery When Wet',
-              artist: 'Bon Jovi', tracks: ['Let It Rock', 'You Give Love a Bad
-              Name'] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks:
-              ['1999', 'Little Red Corvette'] }, 1245: { artist: 'Robert
-              Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold' } };
-              function updateRecords(object, id, prop, value) { if (prop !==
-              'tracks' && value !== "") { object[id][prop] = value; } else if
-              (prop === "tracks" && !object[id].hasOwnProperty("tracks")) {
-              object[id][prop] = [value]; } else if (prop === "tracks" && value
-              !== "") { object[id][prop].push(value); } else if (value === "") {
-              delete object[id][prop]; } return object; }
-              updateRecords(collection, 5439, 'artist', 'ABBA');
+              <pre>
+   $(function () {
+     for (i = 0; i &lt; regions.length; i++) {
+       $("#" + regions[i].region_code).data("region", regions[i]);
+     }
+   $(".nmap g")
+     .mouseover(function (e) {
+       var region_data = $(this).data("region");
+       $(
+         '&lt;div class="info_panel"&gt;' +
+         region_data.region_name +
+         "&lt;br&gt;" +
+         "Area: " +
+         region_data.area.toLocaleString("en-UK") +
+         "&lt;br&gt;" +
+         "Population: " +
+         region_data.population.toLocaleString("en-UK") +
+         "&lt;br&gt;" +
+         "Population density: " +
+         region_data.population_density.toLocaleString("en-UK") +
+         "&lt;br&gt;" +
+         "Notes: " +
+         region_data.notes.toLocaleString("en-UK") +
+         "&lt;br&gt;" +
+         "&lt;/div&gt;"
+       ).appendTo("body");
+     })
+     .mouseleave(function () {
+       $(".info_panel").remove();
+     })
+     .mousemove(function (e) {
+       var mouseX = e.pageX,
+         mouseY = e.pageY;
+       $(".info_panel").css({
+         top: mouseY - 100,
+         left: mouseX - $(".info_panel").width() / 2,
+       });
+     });
+   });
+              </pre>
             </code>
           </section>
         </div>
@@ -93,13 +121,6 @@
             <ul>
               <li>Russian (native)</li>
               <li>English (B2)</li>
-            </ul>
-          </div>
-          <div class="aside-block">
-            <b>Links</b>
-            <ul>
-              <li>linkedin.com/in/anna-holovan</li>
-              <li>github.com/annahlv</li>
             </ul>
           </div>
         </aside>
