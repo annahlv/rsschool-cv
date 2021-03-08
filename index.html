@@ -7,102 +7,109 @@
     <title>CV | Anna Holovan</title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body class="grid">
-    <header class="header col-66">
-      <img class="photo" src="img/photo.png" alt="Photo" />
-      <h1>Anna Holovan</h1>
-    </header>
-    <main>
-      <div class="col-66">
-        <section>
-          <h6>Experience</h6>
-          <h4>Web Designer</h4>
-          <p>
-            ООО «Дэксэтсервис» (OOO Dexatservice)
-            <br />
-            Nov 2018 - Oct 2020 - 2 years, Minsk, Belarus
-            <br />
-            UI design, graphic design, corporate print design. Our main project
-            was creating the website for car rental service using the .NET Core
-            platform. During that time I earned some valuable experience in
-            design and web development.
-          </p>
-        </section>
-        <section>
-          <h6>Education</h6>
-          <h4>Belarusian State Technological University</h4>
-          <p>
-            2016 - 2020, Minsk, Belarus
-            <br />
-            Bachelor’s degree in Design of Electronic and Web Publications. Here
-            I've taken courses in interface design, math, cryptography,
-            frontend/backend programming, image/video processing, animation, 3D
-            modelling, project management, etc.
-          </p>
-        </section>
-        <section>
-          <h6>Code examples</h6>
-          <code>
-            var collection = { 2548: { albumTitle: 'Slippery When Wet', artist:
-            'Bon Jovi', tracks: ['Let It Rock', 'You Give Love a Bad Name'] },
-            2468: { albumTitle: '1999', artist: 'Prince', tracks: ['1999',
-            'Little Red Corvette'] }, 1245: { artist: 'Robert Palmer', tracks:
-            [] }, 5439: { albumTitle: 'ABBA Gold' } }; function
-            updateRecords(object, id, prop, value) { if (prop !== 'tracks' &&
-            value !== "") { object[id][prop] = value; } else if (prop ===
-            "tracks" && !object[id].hasOwnProperty("tracks")) { object[id][prop]
-            = [value]; } else if (prop === "tracks" && value !== "") {
-            object[id][prop].push(value); } else if (value === "") { delete
-            object[id][prop]; } return object; } updateRecords(collection, 5439,
-            'artist', 'ABBA');
-          </code>
-        </section>
-      </div>
-      <aside class="col-33">
-        <div class="aside-block">
-          <ul>
-            <li>annahlv.work@gmail.com</li>
-            <li>+380 67 382 15 18</li>
-            <li>Kyiv, Ukraine</li>
-          </ul>
+  <body>
+    <div class="grid">
+      <header class="header col-66">
+        <img class="photo" src="img/photo.png" alt="Photo" />
+        <h1>Anna Holovan</h1>
+      </header>
+      <main>
+        <div class="col-66">
+          <section>
+            <h6>Experience</h6>
+            <h4>Web Designer</h4>
+            <p>
+              ООО «Дэксэтсервис» (OOO Dexatservice)
+              <br />
+              Nov 2018 - Oct 2020 - 2 years, Minsk, Belarus
+              <br />
+              UI design, graphic design, corporate print design. Our main
+              project was creating the website for car rental service using the
+              .NET Core platform. During that time I earned some valuable
+              experience in design and web development.
+            </p>
+          </section>
+          <section>
+            <h6>Education</h6>
+            <h4>Belarusian State Technological University</h4>
+            <p>
+              2016 - 2020, Minsk, Belarus
+              <br />
+              Bachelor’s degree in Design of Electronic and Web Publications.
+              Here I've taken courses in interface design, math, cryptography,
+              frontend/backend programming, image/video processing, animation,
+              3D modelling, project management, etc.
+            </p>
+          </section>
+          <section>
+            <h6>Code examples</h6>
+            <code>
+              var collection = { 2548: { albumTitle: 'Slippery When Wet',
+              artist: 'Bon Jovi', tracks: ['Let It Rock', 'You Give Love a Bad
+              Name'] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks:
+              ['1999', 'Little Red Corvette'] }, 1245: { artist: 'Robert
+              Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold' } };
+              function updateRecords(object, id, prop, value) { if (prop !==
+              'tracks' && value !== "") { object[id][prop] = value; } else if
+              (prop === "tracks" && !object[id].hasOwnProperty("tracks")) {
+              object[id][prop] = [value]; } else if (prop === "tracks" && value
+              !== "") { object[id][prop].push(value); } else if (value === "") {
+              delete object[id][prop]; } return object; }
+              updateRecords(collection, 5439, 'artist', 'ABBA');
+            </code>
+          </section>
         </div>
-        <div class="aside-block">
-          <b>Technologies</b>
-          <ul>
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>C# / .NET</li>
-            <li>SQL</li>
-            <li>Unity</li>
-            <li>Git</li>
-          </ul>
-        </div>
-        <div class="aside-block">
-          <b>Software</b>
-          <ul>
-            <li>Visual Studio</li>
-            <li>VS Code</li>
-            <li>Figma</li>
-            <li>Microsoft Azure</li>
-            <li>Adobe Creative Suite</li>
-          </ul>
-        </div>
-        <div class="aside-block">
-          <b>Languages</b>
-          <ul>
-            <li>Russian (native)</li>
-            <li>English (B2)</li>
-          </ul>
-        </div>
-        <div class="aside-block">
-          <b>Links</b>
-          <ul>
-            <li>linkedin.com/in/anna-holovan</li>
-            <li>github.com/annahlv</li>
-          </ul>
-        </div>
-      </aside>
-    </main>
-    <footer></footer>
+        <aside class="col-33">
+          <div class="aside-block">
+            <ul>
+              <li>annahlv.work@gmail.com</li>
+              <li>+380 67 382 15 18</li>
+              <li>Kyiv, Ukraine</li>
+            </ul>
+          </div>
+          <div class="aside-block">
+            <b>Technologies</b>
+            <ul>
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>C# / .NET</li>
+              <li>SQL</li>
+              <li>Unity</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="aside-block">
+            <b>Software</b>
+            <ul>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>Microsoft Azure</li>
+              <li>Adobe Creative Suite</li>
+            </ul>
+          </div>
+          <div class="aside-block">
+            <b>Languages</b>
+            <ul>
+              <li>Russian (native)</li>
+              <li>English (B2)</li>
+            </ul>
+          </div>
+          <div class="aside-block">
+            <b>Links</b>
+            <ul>
+              <li>linkedin.com/in/anna-holovan</li>
+              <li>github.com/annahlv</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <a href="https://github.com/annahlv">Github</a>
+        <a href="https://rs.school/js/">
+          <img src="img/svg/rs_school_js.svg" alt="RS School" width="100px" />
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
